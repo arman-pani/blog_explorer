@@ -16,7 +16,7 @@ class BlogBloc extends Bloc<BlogEvent, BlogState> {
         final blogModelList = await blogDataRepository.getBlogModelList();
         emit(BlogSuccess(blogModelList: blogModelList));
       } catch (e) {
-        return emit(BlogFailure(error: e.toString()));
+        return emit(BlogFailure(error: "An unexpected error occured."));
       }
     });
   }
