@@ -12,7 +12,6 @@ class BlogListPage extends StatefulWidget {
   State<BlogListPage> createState() => _BlogListPageState();
 }
 
-class _BlogListPageState extends State<BlogListPage> {
   @override
   void initState() {
     super.initState();
